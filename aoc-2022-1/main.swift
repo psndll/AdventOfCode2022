@@ -7,5 +7,10 @@
 
 import Foundation
 
-print("Hello, World!")
+main()
 
+public func main() {
+    print("Advent of Code 2022")
+    
+    aoc_22_1()
+}
