@@ -9,7 +9,9 @@ import Foundation
 
 public func aoc_22_1() {
     
-    if let caloriesList = loadRaw(file: "/Users/pelle/dev/git/aoc/2022/aoc-2022-1/input/calories") {
+    print("\n   --- Day 1 ---")
+    
+    if let caloriesList = load(file: "input/calories") {
         var elfCalories = 0
         var listOfCalories = [Int]()
         

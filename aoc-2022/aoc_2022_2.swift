@@ -8,6 +8,9 @@
 import Foundation
 
 public func aoc_22_2() {
+    
+    print("\n   --- Day 2 ---")
+    
     // points for tool rock/X=1p, paper/Y=2p, scissor/Z=3p
     let toolPoints = ["X":1, "Y":2, "Z":3]
     
@@ -20,7 +23,7 @@ public func aoc_22_2() {
                          "BX":"X", "BY":"Y", "BZ":"Z",
                          "CX":"Y", "CY":"Z", "CZ": "X"]
     
-    if let strategyList = loadRaw(file: "/Users/pelle/dev/git/aoc/2022/aoc-2022-1/input/strategy") {
+    if let strategyList = load(file: "input/strategy") {
         
         //part one
         var myScore = [Int]()

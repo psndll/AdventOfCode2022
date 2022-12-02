@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/pelle/dev/git/aoc/2022/aoc-2022-1/aoc-2022.xcodeproj">
    </FileRef>
 </Workspace>

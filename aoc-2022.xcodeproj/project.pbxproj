@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		660E347C293A4511007B15A1 /* strategy.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66BA5E842939E22400FC70C7 /* strategy.txt */; };
+		660E347D293A46DD007B15A1 /* calories.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6670327B2938D62200CAA388 /* calories.txt */; };
+		660E347E293A46E3007B15A1 /* strategy_sample.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66BA5E832939D92600FC70C7 /* strategy_sample.txt */; };
 		667032712938D4D400CAA388 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667032702938D4D400CAA388 /* main.swift */; };
 		667032792938D55600CAA388 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667032782938D55600CAA388 /* common.swift */; };
 		6670327D2938E01F00CAA388 /* aoc_2022_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6670327C2938E01F00CAA388 /* aoc_2022_1.swift */; };
@@ -16,24 +19,27 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		6670326B2938D4D400CAA388 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = input;
+			dstSubfolderSpec = 16;
 			files = (
+				660E347E293A46E3007B15A1 /* strategy_sample.txt in CopyFiles */,
+				660E347D293A46DD007B15A1 /* calories.txt in CopyFiles */,
+				660E347C293A4511007B15A1 /* strategy.txt in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6670326D2938D4D400CAA388 /* aoc-2022-1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "aoc-2022-1"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6670326D2938D4D400CAA388 /* aoc-2022 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "aoc-2022"; sourceTree = BUILT_PRODUCTS_DIR; };
 		667032702938D4D400CAA388 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		667032782938D55600CAA388 /* common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
-		6670327B2938D62200CAA388 /* calories.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = calories.txt; path = input/calories.txt; sourceTree = SOURCE_ROOT; };
+		6670327B2938D62200CAA388 /* calories.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = calories.txt; path = "../../../../../../../../dev/git/aoc/2022/aoc-2022-1/input/calories.txt"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6670327C2938E01F00CAA388 /* aoc_2022_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aoc_2022_1.swift; sourceTree = "<group>"; };
 		66BA5E812939D88100FC70C7 /* aoc_2022_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aoc_2022_2.swift; sourceTree = "<group>"; };
 		66BA5E832939D92600FC70C7 /* strategy_sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = strategy_sample.txt; sourceTree = "<group>"; };
-		66BA5E842939E22400FC70C7 /* strategy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = strategy.txt; sourceTree = "<group>"; };
+		66BA5E842939E22400FC70C7 /* strategy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = strategy.txt; path = input/strategy.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,7 @@
 			children = (
 				6670327A2938D5F800CAA388 /* input */,
 				667032772938D53900CAA388 /* common */,
-				6670326F2938D4D400CAA388 /* aoc-2022-1 */,
+				6670326F2938D4D400CAA388 /* aoc-2022 */,
 				6670326E2938D4D400CAA388 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,19 +66,19 @@
 		6670326E2938D4D400CAA388 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6670326D2938D4D400CAA388 /* aoc-2022-1 */,
+				6670326D2938D4D400CAA388 /* aoc-2022 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6670326F2938D4D400CAA388 /* aoc-2022-1 */ = {
+		6670326F2938D4D400CAA388 /* aoc-2022 */ = {
 			isa = PBXGroup;
 			children = (
 				667032702938D4D400CAA388 /* main.swift */,
 				6670327C2938E01F00CAA388 /* aoc_2022_1.swift */,
 				66BA5E812939D88100FC70C7 /* aoc_2022_2.swift */,
 			);
-			path = "aoc-2022-1";
+			path = "aoc-2022";
 			sourceTree = "<group>";
 		};
 		667032772938D53900CAA388 /* common */ = {
@@ -96,21 +102,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6670326C2938D4D400CAA388 /* aoc-2022-1 */ = {
+		6670326C2938D4D400CAA388 /* aoc-2022 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 667032742938D4D400CAA388 /* Build configuration list for PBXNativeTarget "aoc-2022-1" */;
+			buildConfigurationList = 667032742938D4D400CAA388 /* Build configuration list for PBXNativeTarget "aoc-2022" */;
 			buildPhases = (
 				667032692938D4D400CAA388 /* Sources */,
 				6670326A2938D4D400CAA388 /* Frameworks */,
 				6670326B2938D4D400CAA388 /* CopyFiles */,
+				660E3478293A4392007B15A1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "aoc-2022-1";
+			name = "aoc-2022";
 			productName = "aoc-2022-1";
-			productReference = 6670326D2938D4D400CAA388 /* aoc-2022-1 */;
+			productReference = 6670326D2938D4D400CAA388 /* aoc-2022 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -128,7 +135,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 667032682938D4D400CAA388 /* Build configuration list for PBXProject "aoc-2022-1" */;
+			buildConfigurationList = 667032682938D4D400CAA388 /* Build configuration list for PBXProject "aoc-2022" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -141,10 +148,20 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6670326C2938D4D400CAA388 /* aoc-2022-1 */,
+				6670326C2938D4D400CAA388 /* aoc-2022 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		660E3478293A4392007B15A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		667032692938D4D400CAA388 /* Sources */ = {
@@ -299,7 +316,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		667032682938D4D400CAA388 /* Build configuration list for PBXProject "aoc-2022-1" */ = {
+		667032682938D4D400CAA388 /* Build configuration list for PBXProject "aoc-2022" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				667032722938D4D400CAA388 /* Debug */,
@@ -308,7 +325,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		667032742938D4D400CAA388 /* Build configuration list for PBXNativeTarget "aoc-2022-1" */ = {
+		667032742938D4D400CAA388 /* Build configuration list for PBXNativeTarget "aoc-2022" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				667032752938D4D400CAA388 /* Debug */,

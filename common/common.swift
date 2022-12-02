@@ -11,23 +11,13 @@ func load(file named: String) -> [String]? {
     guard let fileUrl = Bundle.main.url(forResource: named, withExtension: "txt") else {
         return nil
     }
-    
+
     guard let content = try? String(contentsOf: fileUrl, encoding: .utf8) else {
         return nil
     }
     return content.components(separatedBy: CharacterSet.newlines)
 }
 
-func loadRaw(file: String) -> [String]? {
-    let filename = file + ".txt"
-    let filecontent = try? String(contentsOfFile: filename)
-    
-    if let content = filecontent {
-        return content.components(separatedBy: CharacterSet.newlines)
-    }
-    
-    return nil
-}
 
 extension StringProtocol {
     subscript(offset: Int) -> Character {
