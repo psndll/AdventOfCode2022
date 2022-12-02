@@ -8,9 +8,17 @@
 import Foundation
 
 public func aoc_22_2() {
+    // points for tool rock/X=1p, paper/Y=2p, scissor/Z=3p
+    let toolPoints = ["X":1, "Y":2, "Z":3]
     
-    let points = ["A X":4, "A Y":8, "A Z": 3, "B X":1, "B Y":5, "B Z": 9, "C X":7, "C Y":2, "C Z": 6]
-    let game = ["A X":"A Z", "A Y":"A X", "A Z":"A Y", "B X":"B X", "B Y":"B Y", "B Z":"B Z", "C X":"C Y", "C Y":"C Z", "C Z": "C X"]
+    //points for game
+    let gamePoints = ["AX":3, "AY":6, "AZ": 0,
+                      "BX":0, "BY":3, "BZ": 6,
+                      "CX":6, "CY":0, "CZ": 3]
+    
+    let strategy2Move = ["AX":"Z", "AY":"X", "AZ":"Y",
+                         "BX":"X", "BY":"Y", "BZ":"Z",
+                         "CX":"Y", "CY":"Z", "CZ": "X"]
     
     if let strategyList = loadRaw(file: "/Users/pelle/dev/git/aoc/2022/aoc-2022-1/input/strategy") {
         
@@ -19,10 +27,12 @@ public func aoc_22_2() {
         
         strategyList.forEach() {line in
             if line != "" {
+                let players = line.replacingOccurrences(of: " ", with: "")
                 
-                if let score = points[line] {
-                    myScore.append(score)
-                }
+                guard let toolpoint = toolPoints[String(players[1])] else {return}
+                guard let score = gamePoints[players] else {return}
+                
+                myScore.append(toolpoint + score)
             }
         }
         
@@ -32,11 +42,15 @@ public func aoc_22_2() {
         var myScore2 = [Int]()
         
         strategyList.forEach() {line in
-            if let gameStrat = game[line] {
-                if let score = points[gameStrat] {
-                    myScore2.append(score)
-                }
-            }
+            let players = line.replacingOccurrences(of: " ", with: "")
+            
+            guard let myMove = strategy2Move[players] else {return}
+                
+            let newMove = String(String(players[0]) + myMove)
+            guard let toolpoint = toolPoints[String(newMove[1])] else {return}
+            guard let score = gamePoints[newMove] else {return}
+            
+            myScore2.append(toolpoint + score)
         }
         
         print("My strategy score will be \(myScore2.reduce(0, +))")
