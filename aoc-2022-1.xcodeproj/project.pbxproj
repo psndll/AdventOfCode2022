@@ -10,6 +10,7 @@
 		667032712938D4D400CAA388 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667032702938D4D400CAA388 /* main.swift */; };
 		667032792938D55600CAA388 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667032782938D55600CAA388 /* common.swift */; };
 		6670327D2938E01F00CAA388 /* aoc_2022_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6670327C2938E01F00CAA388 /* aoc_2022_1.swift */; };
+		66BA5E822939D88100FC70C7 /* aoc_2022_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BA5E812939D88100FC70C7 /* aoc_2022_2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,9 @@
 		667032782938D55600CAA388 /* common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
 		6670327B2938D62200CAA388 /* calories.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = calories.txt; path = input/calories.txt; sourceTree = SOURCE_ROOT; };
 		6670327C2938E01F00CAA388 /* aoc_2022_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aoc_2022_1.swift; sourceTree = "<group>"; };
+		66BA5E812939D88100FC70C7 /* aoc_2022_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aoc_2022_2.swift; sourceTree = "<group>"; };
+		66BA5E832939D92600FC70C7 /* strategy_sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = strategy_sample.txt; sourceTree = "<group>"; };
+		66BA5E842939E22400FC70C7 /* strategy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = strategy.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 			children = (
 				667032702938D4D400CAA388 /* main.swift */,
 				6670327C2938E01F00CAA388 /* aoc_2022_1.swift */,
+				66BA5E812939D88100FC70C7 /* aoc_2022_2.swift */,
 			);
 			path = "aoc-2022-1";
 			sourceTree = "<group>";
@@ -82,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				6670327B2938D62200CAA388 /* calories.txt */,
+				66BA5E832939D92600FC70C7 /* strategy_sample.txt */,
+				66BA5E842939E22400FC70C7 /* strategy.txt */,
 			);
 			path = input;
 			sourceTree = "<group>";
@@ -144,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66BA5E822939D88100FC70C7 /* aoc_2022_2.swift in Sources */,
 				667032792938D55600CAA388 /* common.swift in Sources */,
 				6670327D2938E01F00CAA388 /* aoc_2022_1.swift in Sources */,
 				667032712938D4D400CAA388 /* main.swift in Sources */,

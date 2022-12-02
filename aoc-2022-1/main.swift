@@ -12,5 +12,6 @@ main()
 public func main() {
     print("Advent of Code 2022")
     
-    aoc_22_1()
+    //aoc_22_1()
+    aoc_22_2()
 }
