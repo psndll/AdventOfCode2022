@@ -15,6 +15,7 @@ public func main() {
     
     aoc_22_1()
     aoc_22_2()
+    aoc_22_3()
     
     print("\ncounting down to christmas eve...\n\n")
 }
