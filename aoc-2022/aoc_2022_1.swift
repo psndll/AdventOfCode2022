@@ -30,7 +30,7 @@ public func aoc_22_1() {
         }
         
         if let max = listOfCalories.max() {
-            print("Elf with most calories has \(max)")
+            print("Part 1: Elf with most calories has \(max)")
         }
         
         let calorieSum = Array(listOfCalories.sorted().reversed())[0...2].reduce(0, +)
@@ -38,6 +38,6 @@ public func aoc_22_1() {
         //let subarray = Array(sortedList)[0...2]
         //var calorieSum = subarray.reduce(0, +)
         
-        print("three Elf with most calories has \(calorieSum)")
+        print("Part 2: three Elf with most calories has \(calorieSum)")
     }
 }

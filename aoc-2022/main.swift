@@ -16,6 +16,10 @@ public func main() {
     aoc_22_1()
     aoc_22_2()
     aoc_22_3()
+    aoc_22_4()
+    aoc_22_5()
+    aoc_22_7()
+    aoc_22_8()
     
-    print("\ncounting down to christmas eve...\n\n")
+    print("\ncounting down to christmas...\n")
 }

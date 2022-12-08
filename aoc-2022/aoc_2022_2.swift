@@ -39,7 +39,7 @@ public func aoc_22_2() {
             }
         }
         
-        print("My strategy score will be \(myScore.reduce(0, +))")
+        print("Part 1: strategy score will be \(myScore.reduce(0, +))")
         
         //part two
         var myScore2 = [Int]()
@@ -56,6 +56,6 @@ public func aoc_22_2() {
             myScore2.append(toolpoint + score)
         }
         
-        print("My strategy score will be \(myScore2.reduce(0, +))")
+        print("Part 2: strategy score will be \(myScore2.reduce(0, +))")
     }
 }
